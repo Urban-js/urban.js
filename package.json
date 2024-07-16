@@ -1,0 +1,32 @@
+{
+  "name": "urban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "turbo": {
+    "pipeline": {
+      "dev": {
+        "cache": false
+      },
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**"
+        ]
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.0.6"
+  }
+}
