@@ -1,0 +1,7 @@
+packages:
+- packages/*
+
+options: 
+  git-checks: false
+  strict-peer-dependencies: false
+  prefer-worspace-packages: true
