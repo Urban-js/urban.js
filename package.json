@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "workspaces": [
-    "ui/*"
-  ],
   "scripts": {
     "dev": "turbo run dev",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "lint": "npx @biomejs/biome check --apply ."
   },
   "keywords": [],
   "author": "",
