@@ -10,7 +10,7 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'react-ui',
       fileName: (format) => `react-ui.${format}.js`,
-      formats: ['es'],
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
       external: ['react', 'react-dom']

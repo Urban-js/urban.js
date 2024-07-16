@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/react-ui.cjs.js",
+  "module": "./dist/react-ui.es.js",
+  "types": "./dist/react-ui.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
